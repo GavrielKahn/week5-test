@@ -1,0 +1,75 @@
+/*
+#081c51
+#194594
+#2155cd    #29 5d d6    (+080808)
+*/
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #2155cd;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #081c51;
+  border-radius: 0;
+  border: 0;
+}
+.navbar-brand {
+  padding-top: 25px;
+  height: 85px;
+}
+.navbar-brand h1 { 
+  color: #eee;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 15px 30px 30px #aff;
+  margin-top: 0;
+  margin-bottom: 0px;
+  padding-bottom: 15px;
+  line-height: .75;
+}
+#nav-list {
+  margin-top: 10px;
+  background-color: 2155cd;
+}
+#nav-list a {
+  color: #fff;
+  background-color: #194594;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #295dd6;
+}
+#nav-list a span { /* Chicken-Beef-Susui */
+  font-size: 1.8em;
+}
+
+hr{
+	margin:0;
+}
+/* how to get rid of the darkblue line above and below the collapsable menu? ???  */
+/* How to change the color back blue  ??? */  
+.navbar-default  .navbar-focus  {
+    background-color: #081c51;
+}
+
+.navbar-hover {
+	background-color: #ddd;
+}
+
+.navbar-header button.navbar-toggle {
+ 
+ background-color:  #081c51; 
+ 
+}
+
+.menu-tile {
+ box-shadow: 0 0 50px #3F0C1F;
+  
+  border: 2px solid #3F0C1F;
+}
+.menu-content {
+ 	padding: 15px;
+}
