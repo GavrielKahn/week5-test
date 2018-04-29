@@ -77,15 +77,11 @@ function buildAndShowHomeHTML (categories) {
     homeHtmlUrl,
     function (homeHtml) {  //TODO: Step 2
       randCategory = chooseRandomCategory(categories);
-      var html = randCategory;
+      short_name = "'" + randCategory.short_name + "'";
+      // console.log(homeHtml);
 
-       var name = "" + randCategory.name;
-      var short_name = randCategory.short_name;
-       html = insertProperty (homeHtml, "name", name);
-       html = insertProperty (homeHtml, "short_name", short_name);
-       homeHtml = "<section class = 'row'>" + homeHtml + "</section>"
-	     $dc.loadMenuItems(short_name);
-	    // insertHtml("#main-content",homeHtml);
+      var html = insertProperty (homeHtml, "randomCategoryShortName", short_name);
+      insertHtml("#main-content", html);
 
     },
     false); // False here because we are getting just regular HTML from the server, so no need to process JSON.
